@@ -1,0 +1,117 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.destaques__principal,
+	.destaques__categorias {
+		grid-column: 1 / 5;
+	}
+	.destaques__secundario:nth-child(2),
+	.destaques__secundario:nth-child(3),
+	.destaques__secundario:nth-child(4),
+	.destaques__secundario:nth-child(5) {
+		display: none;
+		grid-column: none;
+		grid-row: none;
+	}
+	.populares__contenido {
+		flex-direction: column;
+	}
+	.populares__card {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+
+	.destaques__categorias___item {
+		width: calc(100% / 2);
+	}
+	.destaques__categorias___icon {
+		display: inline-block;
+		font-size: 1rem;
+		margin-bottom: 0;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.destaques__categorias___item {
+		width: calc(100% / 2);
+	}
+	.destaques__categorias___icon {
+		display: inline-block;
+		font-size: 1rem;
+		margin-bottom: 0;
+	}}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.populares__card {
+		width: calc(100% / 2 - 1rem);
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.destaques__principal {
+		--column: 1 / 4;
+		--row: 1 / 3;
+	}
+	.destaques__secundario:nth-child(2) {
+		--column: 4 / 4;
+		--row: 1 / 2;
+	}
+	.destaques__secundario:nth-child(3) {
+		--column: 4 / 4;
+		--row: 2 / 3;
+	}
+	.destaques__secundario:nth-child(4) {
+		--column: 4 / 5;
+		--row: 3 / 4;
+	}
+	.destaques__secundario:nth-child(5) {
+		--column: 3 / 4;
+		--row: 3 / 4;
+	}
+	.populares__card {
+		width: calc(100% / 3 - 1rem);
+	}
+	.destaques__categorias {
+		grid-column: 1 / 3;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.destaques__principal {
+		--column: 1 / 3;
+		--row: 1 / 3;
+	}
+	.destaques__secundario:nth-child(2) {
+		--column: 4 / 3;
+		--row: 1 / 2;
+	}
+	.destaques__secundario:nth-child(3) {
+		--column: 4 / 3;
+		--row: 2 / 3;
+	}
+	.destaques__secundario:nth-child(4) {
+		--column: 4 / 4;
+		--row: 1 / 2;
+	}
+	.destaques__secundario:nth-child(5) {
+		--column: 4 / 4;
+		--row: 2 / 2;
+	}
+	.populares__card {
+		width: calc(100% / 5 - 1rem);
+	}
+	.destaques__categorias {
+		grid-column: 1 / 5;
+	}
+	.destaques__categorias___item {
+		width: calc(100% / 4);
+	}
+	.destaques__categorias___icon {
+		display: block;
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+}
